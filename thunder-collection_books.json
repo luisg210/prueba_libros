@@ -1,0 +1,131 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "books",
+    "dateExported": "2023-09-01T13:32:42.219Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "03e947bc-7c49-4f30-bebe-98b5d6356f88",
+            "colId": "f5d20a39-3677-4e7e-b4ec-7025fec9f8bc",
+            "containerId": "",
+            "name": "Authors",
+            "url": "http://localhost:8080/api/author/",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2023-09-01T13:31:22.049Z",
+            "modified": "2023-09-01T13:32:28.385Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dc0fef1c-9b26-4cfa-bbc1-506cce6bd3aa",
+            "colId": "f5d20a39-3677-4e7e-b4ec-7025fec9f8bc",
+            "containerId": "",
+            "name": "Categories",
+            "url": "http://localhost:8080/api/category/",
+            "method": "GET",
+            "sortNum": 7500,
+            "created": "2023-09-01T13:31:19.571Z",
+            "modified": "2023-09-01T13:32:14.134Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d47d4e74-c4fc-4750-ae21-0bdaf1208cdd",
+            "colId": "f5d20a39-3677-4e7e-b4ec-7025fec9f8bc",
+            "containerId": "",
+            "name": "books",
+            "url": "http://localhost:8080/api/book/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-31T16:53:09.722Z",
+            "modified": "2023-08-31T20:22:55.060Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9e469a02-e4ae-40f2-95ea-7ca415e06cf5",
+            "colId": "f5d20a39-3677-4e7e-b4ec-7025fec9f8bc",
+            "containerId": "",
+            "name": "book id",
+            "url": "http://localhost:8080/api/book/10",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-08-31T16:53:18.188Z",
+            "modified": "2023-08-31T20:23:03.463Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a2d656eb-4418-4a80-865a-f8d1a677de8b",
+            "colId": "f5d20a39-3677-4e7e-b4ec-7025fec9f8bc",
+            "containerId": "",
+            "name": "save",
+            "url": "http://localhost:8080/api/book/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-08-31T16:53:58.946Z",
+            "modified": "2023-08-31T23:57:27.596Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Libro 6\",\n  \"author\": {\n    \"id\": 1\n  },\n  \"category\": {\n    \"id\": 1\n  },\n  \"precio\": 2.00,\n  \"estado\": \"d\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "be325d78-ee08-4dfb-88ef-fdf3a52f21ab",
+            "colId": "f5d20a39-3677-4e7e-b4ec-7025fec9f8bc",
+            "containerId": "",
+            "name": "update",
+            "url": "http://localhost:8080/api/book/10",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-08-31T16:54:06.835Z",
+            "modified": "2023-08-31T21:38:06.435Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Libro 2\",\n  \"author\": {\n    \"id\": 2\n  },\n  \"category\": {\n    \"id\": 3\n  },\n  \"precio\": 2.00,\n  \"estado\": \"n\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "207f1a09-ba1a-40a7-8f4c-06ea351994cc",
+            "colId": "f5d20a39-3677-4e7e-b4ec-7025fec9f8bc",
+            "containerId": "",
+            "name": "changeState",
+            "url": "http://localhost:8080/api/book/10",
+            "method": "PATCH",
+            "sortNum": 45000,
+            "created": "2023-08-31T21:51:07.759Z",
+            "modified": "2023-08-31T21:51:41.304Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "54cf90d5-e93a-462d-806b-081b6457dd7f",
+            "colId": "f5d20a39-3677-4e7e-b4ec-7025fec9f8bc",
+            "containerId": "",
+            "name": "delete",
+            "url": "http://localhost:8080/api/book/",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-08-31T16:54:28.076Z",
+            "modified": "2023-08-31T20:23:24.079Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
